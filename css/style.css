@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+/*--------------- buttons ---------------*/
+
+.btnLittle{
+	width: 37px;
+	height: 25px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSimple{
+	width: 70px;
+	height: 25px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnBig{
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnBigger{
+	width: 140px;
+	height: 40px;
+	border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnGrey{
+	background: linear-gradient(#DCDCDC, #C0C0C0);
+	border: 1px inset #C0C0C0;
+}
+
+.btnBlue{
+	background: linear-gradient(#0000FF, #00008B);
+	color: white;
+	border: 1px inset #00008B;
+}
+
+.btnRed{
+	background: linear-gradient(#FF0000, #800000);
+	color: white;
+	border: 1px inset #800000;
+}
+
+.btnYellow{
+	background: linear-gradient(#FFFF00, #808000);
+	border: 1px inset #808000;
+}
+
+.btnSimple:hover, .btnBig:hover, .btnBigger:hover, .btnLittle:hover{
+	font-weight: bold;
+}
+
+/*--------------- wrapper ---------------*/
+
+.wrapper{
+    width: 1000px;
+    margin: auto;
+}
+
+/*--------------- header ---------------*/
+
+header{
+    height: 150px;
+    background: linear-gradient(#E0FFFF, #1E90FF 20%);
+    border-radius: 0px 0px 7px 7px;
+    font-family: cursive;
+    padding-top: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px 3px #00008B;
+}
+
+header h2, header h3{
+    color: cornsilk;
+    text-align: center;
+}
+
+.header__menu{
+    list-style: none;
+    margin-top: 10px;
+    height: 50px;
+    box-sizing: border-box;
+    border-top: 2px solid dimgrey;
+    border-bottom: 2px solid dimgrey;
+    display: none;
+    justify-content: space-between;
+}
+
+.header__menu li{
+    display: inline-block;
+    border-right: 2px solid dimgrey;
+    width: 20%;
+}
+
+.header__menu li:last-child{
+    border-right: none;
+}
+
+.header__menu li a{
+    border-right: none;
+    display: block;
+    width: 100%;
+    height: 46px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.7;
+    color: azure;
+}
+
+.header__active{
+    background-color: #87CEFA;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.header__menu li a:hover{
+    background-color: #87CEFA;
+    color: black;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 1.3;
+    transition: 0.3s;
+}
+
+#header__exit:hover{
+    background-color: red;
+}
+
+/*--------------- registration ---------------*/
+
+.registration{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    padding: 110px 50px 50px;
+    background: linear-gradient(darkturquoise, #FF00FF);
+    border-radius: 7px;    
+    color: azure;
+    font-size: 18px;
+    box-shadow: 0px 0px 6px 3px #4B0082;
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.registration__side{
+    width: 45%;
+}
+
+.registration__text span{
+    color: yellow;
+    font-family: fantasy;
+    font-style: normal;
+}
+
+.registration__text{
+    color: cornsilk;
+    font-style: italic;
+    font-family: serif;
+    text-align: justify;
+}
+
+.registration__btn-wrapper{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.registration__congrats{
+    display: none;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.registration__form{
+    display: none;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registration__form input[type="text"], .registration__form input[type="password"]{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+.registration__form textarea{
+    width: 200px;
+    height: 70px;
+    resize: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.registration__enter{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.registration__enter p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.registration__logIn{
+    margin-top: 20px;
+}
+
+.registration__enter input[type="text"], .registration__enter input[type="password"]{
+    width: 200px;
+    height: 25px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+
+.registration__sighIn{
+    margin-top: 5px;
+}
+
+/*--------------- page ---------------*/
+
+.page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    padding: 100px 50px;
+    background: linear-gradient(#E6E6FA, #F0FFFF 18%);
+    border-radius: 7px;    
+    color: black;
+    font-family: monospace;
+    font-size: 18px;
+    box-shadow: 0px 0px 6px 6px #E6E6FA;
+    display: none;
+    min-height: 630px;
+}
+
+/*---------- profile ----------*/
+
+.page__profile{
+    display: flex;
+}
+
+.page__picture{
+    width: 200px;
+    border-right: 2px groove #ADD8E6;
+}
+
+.page__photo{
+    width: 120px;
+    height: 150px;
+    border: 3px double black;
+    text-align: center;
+}
+
+.page__photo img{
+    height: 90px;
+    opacity: 0.5;
+    margin-top: 25px;
+}
+
+.page__photo input{
+    border: none;
+    background: none;
+    text-decoration: underline
+}
+
+.page__photo input:hover{
+    font-weight: bold;
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.page__statusMood{
+    font-family: monospace;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: dodgerblue;
+}
+
+.page__statusMood th{
+    width: 80px;
+}
+
+.page__picture form{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.page__picture form p{
+    font-family: monospace;
+    color: dimgrey;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.page__picture form select{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.profile__info{
+    width: 520px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    border-right: 2px groove #ADD8E6;
+}
+
+.profile__info table{
+    width: 430px;
+    table-layout: fixed;
+    overflow: hidden;
+}
+
+.profile__userData td[title="name"]{
+    font-family: sans-serif;
+    font-size: 35px;
+    color: darkblue;
+    padding-bottom: 15px;
+    width: 380px;
+}
+
+.profile__userDataField{
+    height: 50px;
+    font-family: monospace;
+    color: blueviolet;
+    height: 35px;
+}
+
+.profile__userData td[title="about"]{
+    height: 50px;
+    font-family: monospace;
+    color: blueviolet;
+    height: 25px;
+    color: blue;
+    padding-top: 15px;
+}
+
+.profile__userData td[title="about"] p{
+    opacity: 0.7;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.profile__friends{
+    width: 250px;
+    margin-left: 20px;
+}
+
+.profile__friends p{
+    text-align: center;
+    font-family: serif;
+    font-size: 25px;
+    color: darkslateblue;
+    margin-bottom: 15px;
+}
+
+.profile__friends ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.profile__friends ul li a{
+    display: block;
+    text-decoration: none;
+    color: darkblue;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(#8B0000, #FF8C00 10%);
+    box-sizing: border-box;
+    padding-left: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 6px 0px #8B0000;
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.profile__friends ul li a:hover{
+    background: linear-gradient(#FF8C00, yellow 10%);
+    text-decoration: underline;
+}
+
+.profile__friends table{
+    border: 3px double #FF8C00;
+    border-radius: 10px;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    color: darkslateblue;
+}
+
+.profile__friends table tr td:last-child{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.page__blackList table{
+    display: none;
+}
+
+/*---------- fliends ----------*/
+
+.page__people{
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page__people h4{
+    color: darkviolet;
+    font-size: 25px;
+}
+
+.page__people p{
+    font-style: italic;
+    color: darkslateblue;
+    margin: 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.page__people input[type="text"]{
+    width: 200px;
+    height: 25px;
+    box-sizing: border-box;
+    padding-left: 7px;
+    border-radius: 5px;
+    border: 1px inset grey;
+}
+
+.page__peopleList{
+    list-style: none;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.page__peopleList a{
+    text-decoration: none;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.page__people table{
+    display: none;
+    border: 3px groove violet;
+    border-radius: 3px;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    color: darkslateblue;
+    width: 300px;
+}
+
+.page__people table tr td{
+    min-width: 100px;
+}
+
+.page__people table th{
+    font-size: 20px;
+    text-align: left;
+}
+
+.page__people table tr:last-child td input{
+    width: 70px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+/*---------- blog ----------*/
+
+.page__blog{
+    display: none;
+}
+
+.page__blog h4{
+    color: darkviolet;
+    font-size: 25px;
+}
+
+.page__blog .page__blogLorem{
+    font-style: italic;
+    color: darkslateblue;
+    margin: 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.page__blogTools{
+    width: 310px;
+}
+
+.page__blogTools .page__blogTheme{
+    width: 300px;
+    margin-bottom: 5px;
+    height: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px inset grey;
+}
+
+.page__blogTools textarea{
+    width: 302px;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.page__post{
+    width: 600px;
+    min-height: 100px;
+    background: linear-gradient(aliceblue, white 20%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px 0px gray;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.page__postTime{
+    font-size: 14px;
+    font-style: italic;
+    color: darkred;
+}
+
+.page__postTimeMinutes{
+    margin-right: 10px;
+}
+
+.page__postTitle{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.page__blogEdit{
+    display: none;
+}
+
+.page__post form{
+    margin-top: 5px;
+}
+
+.page__post form .editPost{
+    margin-right: 10px;
+}
+
+/*---------- black list ----------*/
+
+.page__blackList{
+    display: none;
+}
+
+.page__blackList p{
+    text-align: center;
+}
+
+.page__blackList ul{
+    list-style: none;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+    width: 500px;
+    margin: auto;
+}
+
+.page__blackList ul li{
+    height: 50px;
+    border-bottom: 2px dotted white;
+    line-height: 2;
+}
+
+.page__blackList ul li a{
+    text-decoration:line-through;
+    text-decoration-color: red;
+    color: floralwhite;
+}
+
+.page__blackList ul li a:hover{
+    color: yellow;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.page__blackList table{
+    display: none;
+    border: 5px double black;
+    border-radius: 3px;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    color: darkslateblue;
+    width: 250px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.page__blackList table tr td{
+    min-width: 80px;
+}
+
+.page__blackList table tr:first-child td{
+    font-size: 20px;
+}
+
+/*--------------- footer ---------------*/
+
+footer{
+    height: 100px;
+    padding-top: 10px;
+    background: linear-gradient(to top, #E0FFFF, #1E90FF 30%);
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: darkslategrey;
+    box-shadow: 0px 0px 6px 3px #00008B;
+}
+
+
+
+/*---------------  ---------------*/
+/*---------------  ---------------*/
+/*---------------  ---------------*/
+/*---------------  ---------------*/

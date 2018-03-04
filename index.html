@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h2>Hello!</h2>
+            <h3>We are happy to see you at our website!</h3>
+            <ul class="header__menu" title="qwe">
+                <li><a href="#" class="header__active" title="page__profile">profile</a></li>
+                <li><a href="#" title="page__people">people</a></li>
+                <li><a href="#" title="page__blog">blog</a></li>
+                <li><a href="#" title="page__blackList">black list</a></li>
+                <li><a href="#" id="header__exit">exit</a></li>
+            </ul>
+        </header>
+
+        <div class="registration">
+            <div class="registration__side">
+                <p class="registration__text"><span>We are open for the World.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut minus, officia accusantium atque temporibus alias tenetur blanditiis dignissimos optio provident.</p>
+                <p class="registration__btn-wrapper">
+                    <input type="button" class="registration__btn btnBigger btnYellow" value="sign up">
+                </p>
+                <p class="registration__congrats"><b>Congratulations!</b><br> You are successfully registered!</p>
+                <form action="" class="registration__form" name="regFields">
+                    <input type="text" placeholder="first name*">
+                    <input type="text" placeholder="last name*">
+                    <input type="text" placeholder="nickname*">
+                    <input type="password" placeholder="password*">
+                    <input type="text" placeholder="age">
+                    <input type="text" placeholder="country">
+                    <textarea cols="30" rows="10" maxlength="100" placeholder="tell us about you"></textarea>
+                    <input type="button" value="done" class="registration__form-done btnSimple btnBlue">
+                </form>
+            </div>
+            <div class="registration__side">
+                <p class="registration__text"><span>We are working for your comfort 24/7.</span> Create an account, share your thoughts, find friends, communicate, have fun!</p>
+                <div class="registration__enter">
+                    <p>have an account?</p>
+                    <p>then:</p>
+                    <form action="" class="registration__logIn">
+                        <input type="text" placeholder="nickname">
+                        <input type="password" placeholder="password">
+                        <input type="button" value="sign in" class="registration__sighIn btnBig btnBlue">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="page__profile aPage">
+                <div class="page__picture">
+                    <p class="page__photo">
+                        <img src="http://icons.iconarchive.com/icons/custom-icon-design/silky-line-user/512/user-2-icon.png" alt="user">
+                        <input type="button" value="upload photo">
+                    </p>
+                    <table class="page__statusMood">
+                        <tr>
+                            <th>status: </th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>mood: </th>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <form action="">
+                        <p>change status/mood:</p>
+                        <lable><input type="radio" name="status" title="online"> online</lable>
+                        <lable><input type="radio" name="status" title="offline"> offline</lable>
+                        <lable><input type="radio" name="status" title="invisible"> invisible</lable>
+                        <lable><input type="radio" name="status" title="busy"> busy</lable>
+                        <select name="qwe" id="profile__mood">
+                            <option>mood:</option>
+                            <option>happy</option>
+                            <option>sad</option>
+                            <option>sick</option>
+                            <option>crazy</option>
+                            <option>exited</option>
+                            <option>bored</option>
+                            <option>surprised</option>
+                            <option>exhausted</option>
+                            <option>unhappy</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="profile__info">
+                    <table class="profile__userData">
+                        <tr>
+                            <td title="name" colspan="2"></td>
+                            <td><input type="button" value="edit" title="name" class="btnLittle btnGrey"></td>
+                        </tr>
+                        <tr class="profile__userDataField">
+                            <td>nickname</td>
+                            <td title="nick">jack</td>
+                            <td><input type="button" value="edit" title="nick" class="btnLittle btnGrey"></td>
+                        </tr>
+                        <tr class="profile__userDataField">
+                            <td>age</td>
+                            <td title="age">jack</td>
+                            <td><input type="button" value="edit" title="age" class="btnLittle btnGrey"></td>
+                        </tr>
+                        <tr class="profile__userDataField">
+                            <td>country</td>
+                            <td title="country">jack</td>
+                            <td><input type="button" value="edit" title="country" class="btnLittle btnGrey"></td>
+                        </tr>
+                        <tr class="profile__userDataField">
+                            <td title="about" colspan="2"></td>
+                            <td><input type="button" value="edit" title="about" class="btnLittle btnGrey"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="profile__friends">
+                    <p></p>
+                    <ul></ul>
+                    <table cellspacing="10">
+                        <tr>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>nickname</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>age</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>country</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>about</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" value="remove" class="btnSimple btnBlue">
+                            </td>
+                            <td><input type="button" value="close" class="btnSimple btnRed"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="page__people aPage">
+                <h4>You can find all your friends here :)</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam animi voluptates necessitatibus nam consequuntur, eaque. Consequuntur, reiciendis non facere fuga aperiam sit officiis in aut?</p>
+                <form action="">
+                    <input type="text" placeholder="John Smith">
+                    <input type="button" value="search" id="findPeople" class="btnSimple btnYellow">
+                    <input type="button" value="reset" id="findReset" class="btnSimple btnGrey">
+                </form>
+                <ul class="page__peopleList"></ul>
+                <table>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>nickname</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>age</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>country</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>about</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="friends" id="addFriend" class=""></td>
+                        <td><input type="button" value="black list" id="blackList" class=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page__blog aPage">
+                <h4>Share your thoughts with whole the World! :)</h4>
+                <p class="page__blogLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio earum, voluptates architecto unde dolorem sunt!</p>
+                <form action="" class="page__blogTools">
+                    <input type="text" placeholder="theme" class="page__blogTheme">
+                    <textarea name="" cols="20" rows="10" placeholder="text"></textarea>
+                    <input type="button" value="new post" class="btnBig btnBlue">
+                    <div class="page__blogEdit">
+                        <input type="button" value="save" class="btnSimple btnBlue">
+                        <input type="button" value="cancel" class="btnSimple btnGrey">
+                    </div>
+                </form>
+                <div class="page__blogPosts">
+
+                </div>
+            </div>
+            <div class="page__blackList aPage">
+                <p></p>
+                <ul></ul>
+                <table>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>nickname</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>age</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>country</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>about</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="remove" class="btnSimple btnBlue"></td>
+                        <td><input type="button" value="close" class="btnSimple btnRed"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>We are getting bigger and bigger every day and you still are not our member? Join us right now!</p>
+            <p>All rights reserved ©</p>
+        </footer>
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
